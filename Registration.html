@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ENTERTAINMENT</title>
+    <style>
+        header{background-color:rgb(243, 218, 246);height:200px;}
+       
+        nav ul li {display:inline; margin:5px;}
+        h2{
+            text-shadow:5px 5px 10px rgb(155, 90, 171),10px 10px 20px rgb(123, 44, 118);
+        }
+     </style>
+     <script>
+        function jfun1()
+        {
+           // alert("just for testing")
+            Name=frm1.t1.value;
+            Designation=frm1.t2.value;
+            Email=frm1.t3.value;
+            Location=frm1.t4.value;
+
+            if(Name=="")
+            {
+               alert("please enter the name")
+               return false;
+            }
+            
+            else if(Designation=="")
+            {
+                
+                alert("please enter designation")
+                return false;
+            } 
+            else if(Email=="")
+            {
+                
+                alert("please enter email")
+                return false;
+            } 
+            else if(Location=="")
+            {
+                
+                alert("please enter location")
+                return false;
+            } 
+
+            else{
+                
+                alert("Go Ahead")
+                return true
+
+            }
+        }
+     </script>
+    
+</head>
+<body>
+    
+   
+        <header style="background-image:url(images/img1.jpg);"></header>
+       <h1>ENTERTAINMENT</h1>
+       </header>
+
+    
+    
+    
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Music.html">Music</a></li> 
+            <li><a href="Dance.html">Dance</a></li>
+            <li><a href="Gallery.html">Gallery</a></li> 
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="Result.html">Result</a></li>
+           
+        </ul>
+    </nav>
+    <center>
+    <div style="background-color:rgb(222, 190, 215);border-radius:20px;width:30%">
+        <h2>Registration Page</h2>
+
+        <form name="frm1" onsubmit="return jfun1()" action="thanks.html">
+        <pre>
+        Name              <input type="text" name="t1" placeholder="Enter your Name"><br>
+        Designation       <input type="text" name="t2" placeholder="Enter designation"><br>
+        Email             <input type="text" name="t3" placeholder="enter email"><br>
+        Location          <input type="text" name="t4" placeholder="enter location"><br>
+        <input type="submit"value="Register">
+    </pre>
+    </form>
+        
+    </div>
+    </center>
+    <div style="height:200px;;"></div>
+
+    <footer style="background-color:rgb(211, 167, 206);height:36px">
+      This website is developed by:Ade
+    </footer>
+</body>
+</html>
